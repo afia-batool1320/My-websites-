@@ -1,126 +1,336 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Study Point</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #f2f5fa;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background: #183b66;
-            color: white;
-            padding: 25px;
-        }
+<title>Study Point | Learn Smart, Score Better</title>
 
-        nav {
-            background: #102b4c;
-            padding: 15px;
-        }
+<meta name="description" content="Study Point offers Class 9 educational notes, important questions, MCQs and learning resources in English and Urdu.">
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 12px;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-        section {
-            padding: 25px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #26344a;
+    line-height: 1.7;
+}
 
-        .box {
-            background: white;
-            margin: 15px auto;
-            padding: 20px;
-            max-width: 500px;
-            border-radius: 10px;
-        }
+header {
+    background: #142b55;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
 
-        button {
-            background: #183b66;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
+header h1 {
+    font-size: 36px;
+}
 
-        footer {
-            background: #183b66;
-            color: white;
-            padding: 15px;
-        }
-    </style>
+header p {
+    color: #dce8ff;
+}
+
+nav {
+    background: white;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px #0001;
+}
+
+nav a {
+    color: #142b55;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2878db;
+}
+
+.hero {
+    background: linear-gradient(135deg,#142b55,#2878db);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #142b55;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 45px auto;
+}
+
+.title {
+    text-align: center;
+    color: #142b55;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.card, .content {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000c;
+    margin-bottom: 18px;
+}
+
+.card {
+    border-bottom: 4px solid #2878db;
+}
+
+.card h3, .content h3 {
+    color: #1c4b88;
+    margin-bottom: 10px;
+}
+
+.urdu {
+    direction: rtl;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.btn-blue {
+    display: inline-block;
+    background: #2878db;
+    color: white;
+    padding: 10px 18px;
+    margin-top: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+footer {
+    background: #142b55;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer a {
+    color: #dce8ff;
+    margin: 8px;
+    text-decoration: none;
+}
+
+@media(max-width:600px) {
+    header h1 {font-size: 28px;}
+    .hero h2 {font-size: 27px;}
+    nav {gap: 12px;}
+    nav a {font-size: 13px;}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Study Point</h1>
-    <p>Your Learning Journey Starts Here!</p>
+    <h1>📚 Study Point</h1>
+    <p>Learn Smart, Score Better!</p>
+    <p>آسان تعلیم، بہتر مستقبل</p>
 </header>
 
 <nav>
     <a href="#home">Home</a>
-    <a href="#class9">Class 9</a>
-    <a href="#class10">Class 10</a>
     <a href="#about">About</a>
+    <a href="#notes">Notes</a>
+    <a href="#questions">Questions</a>
+    <a href="#mcqs">MCQs</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<section id="home">
+<section class="hero" id="home">
     <h2>Welcome to Study Point</h2>
-    <p>Find easy notes, important questions and study material.</p>
+    <p>Your learning partner for Class 9. Find notes, important questions and practice MCQs in one place.</p>
+    <p class="urdu">اسٹوڈی پوائنٹ میں خوش آمدید! یہاں نویں جماعت کے نوٹس، اہم سوالات اور MCQs حاصل کریں۔</p>
+    <a class="btn" href="#notes">Start Learning</a>
 </section>
 
-<section id="class9">
-    <h2>Class 9 Notes</h2>
-
-    <div class="box">
-        <h3>Physics</h3>
-        <p>Important questions and easy notes.</p>
-        <button>View Notes</button>
-    </div>
-
-    <div class="box">
-        <h3>Chemistry</h3>
-        <p>Chapter-wise notes and definitions.</p>
-        <button>View Notes</button>
-    </div>
-
-    <div class="box">
-        <h3>Biology</h3>
-        <p>Short questions and long questions.</p>
-        <button>View Notes</button>
+<section class="container" id="about">
+    <h2 class="title">About Us</h2>
+    <div class="content">
+        <p>Study Point is an educational platform created to make learning easier for students. We provide helpful study material in simple English and Urdu.</p>
+        <p class="urdu">اسٹوڈی پوائنٹ ایک تعلیمی ویب سائٹ ہے جس کا مقصد طلبہ کے لیے تعلیم کو آسان بنانا ہے۔</p>
     </div>
 </section>
 
-<section id="class10">
-    <h2>Class 10 Notes</h2>
+<section class="container" id="notes">
+    <h2 class="title">📖 Class 9 Notes</h2>
+    <div class="cards">
 
-    <div class="box">
-        <h3>Physics</h3>
-        <p>Easy explanations and important questions.</p>
-        <button>View Notes</button>
-    </div>
+        <div class="card">
+            <h3>Physics</h3>
+            <p>Definitions, formulas, concepts and numericals.</p>
+            <p class="urdu">تعریفیں، فارمولے اور عددی سوالات۔</p>
+        </div>
 
-    <div class="box">
-        <h3>Chemistry</h3>
-        <p>Chapter-wise study material.</p>
-        <button>View Notes</button>
+        <div class="card">
+            <h3>Chemistry</h3>
+            <p>Basic concepts, equations and important questions.</p>
+            <p class="urdu">بنیادی تصورات اور کیمیائی مساوات۔</p>
+        </div>
+
+        <div class="card">
+            <h3>Mathematics</h3>
+            <p>Formulas, examples and exercise practice.</p>
+            <p class="urdu">فارمولے اور حل شدہ مثالیں۔</p>
+        </div>
+
+        <div class="card">
+            <h3>Biology</h3>
+            <p>Definitions, diagrams and important concepts.</p>
+            <p class="urdu">تعریفیں، خاکے اور اہم تصورات۔</p>
+        </div>
+
     </div>
 </section>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>Study Point helps students learn in an easy way.</p>
+<section class="container" id="questions">
+    <h2 class="title">Important Questions & Answers</h2>
+
+    <div class="content">
+        <h3>Q1. What is Physics?</h3>
+        <p>Physics is the branch of science that studies matter, energy, motion and forces.</p>
+        <p class="urdu">طبیعیات سائنس کی وہ شاخ ہے جس میں مادہ، توانائی، حرکت اور قوت کا مطالعہ کیا جاتا ہے۔</p>
+    </div>
+
+    <div class="content">
+        <h3>Q2. What is Chemistry?</h3>
+        <p>Chemistry is the branch of science that studies matter and its properties.</p>
+        <p class="urdu">کیمسٹری سائنس کی وہ شاخ ہے جس میں مادے اور اس کی خصوصیات کا مطالعہ کیا جاتا ہے۔</p>
+    </div>
+
+    <div class="content">
+        <h3>Q3. What is Biology?</h3>
+        <p>Biology is the scientific study of living organisms.</p>
+        <p class="urdu">حیاتیات جانداروں کے سائنسی مطالعے کو کہتے ہیں۔</p>
+    </div>
+</section>
+
+<section class="container" id="mcqs">
+    <h2 class="title">📝 Practice MCQs</h2>
+
+    <div class="content">
+        <h3>1. What is the SI unit of force?</h3>
+        <p>A) Joule</p>
+        <p>B) Newton</p>
+        <p>C) Watt</p>
+        <p>D) Pascal</p>
+        <details>
+            <summary>Show Answer</summary>
+            <p><b>Correct Answer: B) Newton</b></p>
+            <p class="urdu">درست جواب: نیوٹن</p>
+        </details>
+    </div>
+
+    <div class="content">
+        <h3>2. What is the chemical formula of water?</h3>
+        <p>A) CO2</p>
+        <p>B) H2O</p>
+        <p>C) O2</p>
+        <p>D) NaCl</p>
+        <details>
+            <summary>Show Answer</summary>
+            <p><b>Correct Answer: B) H2O</b></p>
+            <p class="urdu">درست جواب: H2O</p>
+        </details>
+    </div>
+
+    <div class="content">
+        <h3>3. Which gas do plants absorb during photosynthesis?</h3>
+        <p>A) Oxygen</p>
+        <p>B) Nitrogen</p>
+        <p>C) Carbon dioxide</p>
+        <p>D) Hydrogen</p>
+        <details>
+            <summary>Show Answer</summary>
+            <p><b>Correct Answer: C) Carbon dioxide</b></p>
+            <p class="urdu">درست جواب: کاربن ڈائی آکسائیڈ</p>
+        </details>
+    </div>
+</section>
+
+<section class="container" id="contact">
+    <h2 class="title">Contact Us</h2>
+    <div class="content">
+        <p>Have any questions or suggestions? We would love to hear from you.</p>
+        <p class="urdu">کیا آپ کا کوئی سوال یا مشورہ ہے؟ ہمیں ای میل کریں۔</p>
+
+        <!-- Replace this email with your own Gmail address -->
+        <a class="btn-blue" href="mailto:batoolafia05@gmail.com">
+            ✉ Send Us an Email
+        </a>
+
+        <p style="margin-top:15px;">
+            Email:batoolafia05@gmail.com
+        </p>
+    </div>
+</section>
+
+<section class="container" id="privacy">
+    <h2 class="title">Privacy Policy</h2>
+    <div class="content">
+        <p>Study Point respects the privacy of its visitors. We aim to provide a safe and helpful learning experience. We do not intentionally collect sensitive personal information through this website.</p>
+        <p class="urdu">اسٹوڈی پوائنٹ اپنے وزیٹرز کی پرائیویسی کا احترام کرتا ہے اور محفوظ تعلیمی ماحول فراہم کرنے کی کوشش کرتا ہے۔</p>
+        <p>For privacy-related questions, please contact us through our email address.</p>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Study Point</p>
+    <p>© 2026 Study Point. All Rights Reserved.</p>
+    <p>Learn Today, Lead Tomorrow!</p>
+    <p>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy Policy</a>
+    </p>
 </footer>
 
 </body>
 </html>
+
+
