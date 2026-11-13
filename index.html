@@ -5,161 +5,195 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Study Point | Learn Smart, Score Better</title>
+<title>Study Point | Class 9 & Class 10 Learning Hub</title>
 
-<meta name="description" content="Study Point offers Class 9 educational notes, important questions, MCQs and learning resources in English and Urdu.">
+<meta name="description" content="Study Point is an educational learning website offering original study guides, learning tips and subject explanations for Class 9 and Class 10 students.">
+
+<meta name="keywords" content="Study Point, Class 9, Class 10, education, study guides, learning tips">
+
+<meta name="author" content="Study Point">
+
+<meta name="robots" content="index, follow">
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f7fc;
-    color: #26344a;
-    line-height: 1.7;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #243047;
+  line-height: 1.7;
 }
 
 header {
-    background: #142b55;
-    color: white;
-    text-align: center;
-    padding: 30px 15px;
+  background: #102b50;
+  color: white;
+  padding: 20px 7%;
 }
 
-header h1 {
-    font-size: 36px;
+.logo {
+  font-size: 29px;
+  font-weight: bold;
 }
 
-header p {
-    color: #dce8ff;
+.logo span {
+  color: #56d6bd;
 }
 
 nav {
-    background: white;
-    padding: 15px 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 2px 10px #0001;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
 nav a {
-    color: #142b55;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 nav a:hover {
-    color: #2878db;
+  color: #56d6bd;
 }
 
 .hero {
-    background: linear-gradient(135deg,#142b55,#2878db);
-    color: white;
-    text-align: center;
-    padding: 65px 20px;
+  background: linear-gradient(120deg, #102b50, #176b87);
+  color: white;
+  text-align: center;
+  padding: 75px 20px;
 }
 
-.hero h2 {
-    font-size: 34px;
-    margin-bottom: 12px;
+.hero h1 {
+  font-size: 39px;
+  margin-bottom: 15px;
 }
 
 .hero p {
-    max-width: 700px;
-    margin: auto;
-}
-
-.btn {
-    display: inline-block;
-    background: white;
-    color: #142b55;
-    padding: 12px 25px;
-    margin-top: 20px;
-    border-radius: 7px;
-    text-decoration: none;
-    font-weight: bold;
+  max-width: 650px;
+  margin: auto;
 }
 
 .container {
-    max-width: 1100px;
-    width: 90%;
-    margin: 45px auto;
+  width: 88%;
+  max-width: 1100px;
+  margin: 40px auto;
 }
 
-.title {
-    text-align: center;
-    color: #142b55;
-    margin-bottom: 25px;
-    font-size: 28px;
+.section-title {
+  color: #102b50;
+  font-size: 27px;
+  margin-bottom: 20px;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap: 20px;
-}
-
-.card, .content {
-    background: white;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px #0000000c;
-    margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
 }
 
 .card {
-    border-bottom: 4px solid #2878db;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,.06);
+  border: 1px solid #e5ebf2;
 }
 
-.card h3, .content h3 {
-    color: #1c4b88;
-    margin-bottom: 10px;
+.card h3 {
+  color: #176b87;
+  margin-bottom: 10px;
 }
 
-.urdu {
-    direction: rtl;
-    text-align: right;
-    margin-top: 10px;
-    font-size: 17px;
+.card p {
+  margin-bottom: 12px;
 }
 
-.btn-blue {
-    display: inline-block;
-    background: #2878db;
-    color: white;
-    padding: 10px 18px;
-    margin-top: 12px;
-    border-radius: 6px;
-    text-decoration: none;
+.button {
+  display: inline-block;
+  background: #176b87;
+  color: white;
+  padding: 9px 17px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #102b50;
+}
+
+.article {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #e5ebf2;
+}
+
+.article h3 {
+  color: #176b87;
+  margin-bottom: 10px;
+}
+
+.article h4 {
+  margin-top: 12px;
+  color: #102b50;
+}
+
+.article p {
+  margin: 8px 0;
+}
+
+.article ul {
+  margin-left: 22px;
+}
+
+.info {
+  background: #e6f5f4;
+  border-left: 4px solid #176b87;
+  padding: 15px;
+  margin-top: 15px;
 }
 
 footer {
-    background: #142b55;
-    color: white;
-    text-align: center;
-    padding: 30px 15px;
+  background: #102b50;
+  color: white;
+  padding: 30px 7%;
+  text-align: center;
 }
 
 footer a {
-    color: #dce8ff;
-    margin: 8px;
-    text-decoration: none;
+  color: #56d6bd;
+  text-decoration: none;
+  margin: 7px;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+section {
+  scroll-margin-top: 15px;
 }
 
 @media(max-width:600px) {
-    header h1 {font-size: 28px;}
-    .hero h2 {font-size: 27px;}
-    nav {gap: 12px;}
-    nav a {font-size: 13px;}
+  .hero h1 {
+    font-size: 29px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  .container {
+    width: 92%;
+  }
 }
 </style>
 </head>
@@ -167,170 +201,496 @@ footer a {
 <body>
 
 <header>
-    <h1>📚 Study Point</h1>
-    <p>Learn Smart, Score Better!</p>
-    <p>آسان تعلیم، بہتر مستقبل</p>
+  <div class="logo">Study <span>Point</span></div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#class9">Class 9</a>
+    <a href="#class10">Class 10</a>
+    <a href="#guides">Study Guides</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#notes">Notes</a>
-    <a href="#questions">Questions</a>
-    <a href="#mcqs">MCQs</a>
-    <a href="#contact">Contact</a>
-</nav>
-
 <section class="hero" id="home">
-    <h2>Welcome to Study Point</h2>
-    <p>Your learning partner for Class 9. Find notes, important questions and practice MCQs in one place.</p>
-    <p class="urdu">اسٹوڈی پوائنٹ میں خوش آمدید! یہاں نویں جماعت کے نوٹس، اہم سوالات اور MCQs حاصل کریں۔</p>
-    <a class="btn" href="#notes">Start Learning</a>
+  <h1>Welcome to Study Point</h1>
+  <p>
+    Learn better, understand more and build a stronger
+    foundation for your education. Study Point provides
+    helpful educational guides and learning resources
+    for Class 9 and Class 10 students.
+  </p>
+  <a href="#class9" class="button">Explore Lessons</a>
+</section>
+
+<main>
+
+<section class="container">
+  <h2 class="section-title">Welcome to Our Learning Hub</h2>
+
+  <div class="article">
+    <p>
+      Education is not only about memorizing information.
+      It is about understanding ideas, asking questions
+      and using knowledge in everyday life.
+    </p>
+
+    <p>
+      Study Point aims to make learning easier through
+      simple explanations, organized study guides and
+      useful learning strategies. Students can explore
+      different subjects and develop independent study habits.
+    </p>
+  </div>
+</section>
+
+<section class="container" id="class9">
+  <h2 class="section-title">Class 9 Learning Resources</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Physics</h3>
+      <p>
+        Explore motion, force, energy, measurements
+        and basic scientific concepts.
+      </p>
+      <a href="#physics9" class="button">Read Guide</a>
+    </div>
+
+    <div class="card">
+      <h3>Chemistry</h3>
+      <p>
+        Learn about atoms, elements, compounds,
+        chemical reactions and matter.
+      </p>
+      <a href="#chemistry9" class="button">Read Guide</a>
+    </div>
+
+    <div class="card">
+      <h3>Mathematics</h3>
+      <p>
+        Build problem-solving skills through
+        algebra, geometry and basic calculations.
+      </p>
+      <a href="#math9" class="button">Read Guide</a>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="physics9">
+  <div class="article">
+    <h3>Class 9 Physics: Understanding Motion</h3>
+    <p>
+      Motion is the change in position of an object
+      with respect to time. It is one of the basic
+      concepts used to describe the physical world.
+    </p>
+
+    <h4>Distance and Displacement</h4>
+    <p>
+      Distance is the total length of the path travelled
+      by an object. Displacement is the shortest
+      straight-line change from the initial position
+      to the final position, with direction.
+    </p>
+
+    <h4>Speed and Velocity</h4>
+    <p>
+      Speed tells us how much distance an object covers
+      in a given time. Velocity tells us the rate of
+      change of displacement and includes direction.
+    </p>
+
+    <div class="info">
+      Speed = Distance / Time
+      <br>
+      SI unit of speed = metre per second (m/s)
+    </div>
+  </div>
+</section>
+
+<section class="container" id="chemistry9">
+  <div class="article">
+    <h3>Class 9 Chemistry: Atoms and Elements</h3>
+    <p>
+      An atom is the smallest unit of an element
+      that retains its chemical identity. Atoms
+      contain protons, neutrons and electrons.
+    </p>
+
+    <h4>Elements</h4>
+    <p>
+      An element is a pure substance made of only
+      one type of atom. Examples include oxygen,
+      hydrogen, iron and carbon.
+    </p>
+
+    <h4>Compounds</h4>
+    <p>
+      A compound is a substance formed when two
+      or more different elements combine chemically
+      in a fixed proportion. Water is an example
+      of a compound made from hydrogen and oxygen.
+    </p>
+  </div>
+</section>
+
+<section class="container" id="math9">
+  <div class="article">
+    <h3>Class 9 Mathematics: Algebra Basics</h3>
+    <p>
+      Algebra uses letters and symbols to represent
+      numbers and relationships. It helps us solve
+      problems when some values are unknown.
+    </p>
+
+    <h4>Example</h4>
+    <p>Consider the equation:</p>
+    <div class="info">
+      x + 5 = 12
+      <br>
+      x = 12 - 5
+      <br>
+      x = 7
+    </div>
+    <p>
+      The value of x is 7 because adding 5 to 7
+      gives 12.
+    </p>
+  </div>
+</section>
+
+<section class="container" id="class10">
+  <h2 class="section-title">Class 10 Learning Resources</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Physics</h3>
+      <p>
+        Study electricity, waves, light,
+        magnetism and energy.
+      </p>
+      <a href="#physics10" class="button">Read Guide</a>
+    </div>
+
+    <div class="card">
+      <h3>Chemistry</h3>
+      <p>
+        Understand organic chemistry,
+        chemical bonding and reactions.
+      </p>
+      <a href="#chemistry10" class="button">Read Guide</a>
+    </div>
+
+    <div class="card">
+      <h3>Mathematics</h3>
+      <p>
+        Explore quadratic equations,
+        trigonometry and geometry.
+      </p>
+      <a href="#math10" class="button">Read Guide</a>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="physics10">
+  <div class="article">
+    <h3>Class 10 Physics: Waves</h3>
+    <p>
+      A wave is a disturbance that transfers energy
+      from one place to another. In a mechanical wave,
+      particles of the medium vibrate around their
+      equilibrium positions.
+    </p>
+
+    <h4>Types of Waves</h4>
+    <ul>
+      <li>Transverse waves</li>
+      <li>Longitudinal waves</li>
+    </ul>
+
+    <h4>Important Terms</h4>
+    <p>
+      Wavelength is the distance between two
+      consecutive points in the same phase.
+      Frequency is the number of complete vibrations
+      per second.
+    </p>
+
+    <div class="info">
+      Wave speed = Frequency × Wavelength
+      <br>
+      v = fλ
+    </div>
+  </div>
+</section>
+
+<section class="container" id="chemistry10">
+  <div class="article">
+    <h3>Class 10 Chemistry: Organic Chemistry</h3>
+    <p>
+      Organic chemistry is the branch of chemistry
+      that mainly studies carbon compounds.
+      These compounds are found in fuels, food,
+      medicines and many everyday materials.
+    </p>
+
+    <h4>Hydrocarbons</h4>
+    <p>
+      Hydrocarbons are compounds containing
+      only carbon and hydrogen atoms.
+    </p>
+
+    <ul>
+      <li>Alkanes contain single carbon-carbon bonds.</li>
+      <li>Alkenes contain at least one double bond.</li>
+      <li>Alkynes contain at least one triple bond.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="container" id="math10">
+  <div class="article">
+    <h3>Class 10 Mathematics: Quadratic Equations</h3>
+    <p>
+      A quadratic equation is an equation in which
+      the highest power of the variable is two.
+    </p>
+
+    <div class="info">
+      ax² + bx + c = 0
+      <br>
+      where a is not equal to zero.
+    </div>
+
+    <h4>Example</h4>
+    <p>
+      x² - 5x + 6 = 0
+    </p>
+    <p>
+      Factorizing gives:
+    </p>
+    <div class="info">
+      (x - 2)(x - 3) = 0
+      <br>
+      x = 2 or x = 3
+    </div>
+  </div>
+</section>
+
+<section class="container" id="guides">
+  <h2 class="section-title">Useful Study Guides</h2>
+
+  <div class="article">
+    <h3>How to Make an Effective Study Timetable</h3>
+    <p>
+      A study timetable helps students organize their
+      time and balance different subjects. Start by
+      listing your subjects and identifying the topics
+      that need more attention.
+    </p>
+    <ul>
+      <li>Set a clear goal for each study session.</li>
+      <li>Divide large topics into smaller sections.</li>
+      <li>Take short breaks between study sessions.</li>
+      <li>Revise previously learned topics regularly.</li>
+      <li>Allow enough time for sleep and rest.</li>
+    </ul>
+  </div>
+
+  <div class="article">
+    <h3>Why Understanding Is Better Than Memorizing</h3>
+    <p>
+      Understanding a concept helps students explain
+      it in their own words and apply it to new problems.
+      Memorizing alone may not help when a question
+      is presented in a different way.
+    </p>
+    <p>
+      To improve understanding, read the explanation,
+      identify its main idea, work through examples
+      and try explaining the topic without looking
+      at the textbook.
+    </p>
+  </div>
+
+  <div class="article">
+    <h3>How to Prepare for Examinations</h3>
+    <p>
+      Good examination preparation begins with
+      consistent learning rather than last-minute
+      studying. Make a realistic plan and revise
+      each subject regularly.
+    </p>
+    <ul>
+      <li>Understand the syllabus.</li>
+      <li>Practice questions from each topic.</li>
+      <li>Review mistakes and correct them.</li>
+      <li>Practice writing clear answers.</li>
+      <li>Keep your study materials organized.</li>
+    </ul>
+  </div>
 </section>
 
 <section class="container" id="about">
-    <h2 class="title">About Us</h2>
-    <div class="content">
-        <p>Study Point is an educational platform created to make learning easier for students. We provide helpful study material in simple English and Urdu.</p>
-        <p class="urdu">اسٹوڈی پوائنٹ ایک تعلیمی ویب سائٹ ہے جس کا مقصد طلبہ کے لیے تعلیم کو آسان بنانا ہے۔</p>
-    </div>
-</section>
+  <h2 class="section-title">About Study Point</h2>
 
-<section class="container" id="notes">
-    <h2 class="title">📖 Class 9 Notes</h2>
-    <div class="cards">
+  <div class="article">
+    <p>
+      Study Point is an independent educational
+      learning website created to support students
+      in their academic journey.
+    </p>
 
-        <div class="card">
-            <h3>Physics</h3>
-            <p>Definitions, formulas, concepts and numericals.</p>
-            <p class="urdu">تعریفیں، فارمولے اور عددی سوالات۔</p>
-        </div>
+    <p>
+      Our aim is to explain educational topics
+      in simple language and make learning more
+      organized and accessible.
+    </p>
 
-        <div class="card">
-            <h3>Chemistry</h3>
-            <p>Basic concepts, equations and important questions.</p>
-            <p class="urdu">بنیادی تصورات اور کیمیائی مساوات۔</p>
-        </div>
+    <p>
+      We focus on school-level learning resources,
+      basic subject explanations and practical
+      study techniques for Class 9 and Class 10.
+    </p>
 
-        <div class="card">
-            <h3>Mathematics</h3>
-            <p>Formulas, examples and exercise practice.</p>
-            <p class="urdu">فارمولے اور حل شدہ مثالیں۔</p>
-        </div>
-
-        <div class="card">
-            <h3>Biology</h3>
-            <p>Definitions, diagrams and important concepts.</p>
-            <p class="urdu">تعریفیں، خاکے اور اہم تصورات۔</p>
-        </div>
-
-    </div>
-</section>
-
-<section class="container" id="questions">
-    <h2 class="title">Important Questions & Answers</h2>
-
-    <div class="content">
-        <h3>Q1. What is Physics?</h3>
-        <p>Physics is the branch of science that studies matter, energy, motion and forces.</p>
-        <p class="urdu">طبیعیات سائنس کی وہ شاخ ہے جس میں مادہ، توانائی، حرکت اور قوت کا مطالعہ کیا جاتا ہے۔</p>
-    </div>
-
-    <div class="content">
-        <h3>Q2. What is Chemistry?</h3>
-        <p>Chemistry is the branch of science that studies matter and its properties.</p>
-        <p class="urdu">کیمسٹری سائنس کی وہ شاخ ہے جس میں مادے اور اس کی خصوصیات کا مطالعہ کیا جاتا ہے۔</p>
-    </div>
-
-    <div class="content">
-        <h3>Q3. What is Biology?</h3>
-        <p>Biology is the scientific study of living organisms.</p>
-        <p class="urdu">حیاتیات جانداروں کے سائنسی مطالعے کو کہتے ہیں۔</p>
-    </div>
-</section>
-
-<section class="container" id="mcqs">
-    <h2 class="title">📝 Practice MCQs</h2>
-
-    <div class="content">
-        <h3>1. What is the SI unit of force?</h3>
-        <p>A) Joule</p>
-        <p>B) Newton</p>
-        <p>C) Watt</p>
-        <p>D) Pascal</p>
-        <details>
-            <summary>Show Answer</summary>
-            <p><b>Correct Answer: B) Newton</b></p>
-            <p class="urdu">درست جواب: نیوٹن</p>
-        </details>
-    </div>
-
-    <div class="content">
-        <h3>2. What is the chemical formula of water?</h3>
-        <p>A) CO2</p>
-        <p>B) H2O</p>
-        <p>C) O2</p>
-        <p>D) NaCl</p>
-        <details>
-            <summary>Show Answer</summary>
-            <p><b>Correct Answer: B) H2O</b></p>
-            <p class="urdu">درست جواب: H2O</p>
-        </details>
-    </div>
-
-    <div class="content">
-        <h3>3. Which gas do plants absorb during photosynthesis?</h3>
-        <p>A) Oxygen</p>
-        <p>B) Nitrogen</p>
-        <p>C) Carbon dioxide</p>
-        <p>D) Hydrogen</p>
-        <details>
-            <summary>Show Answer</summary>
-            <p><b>Correct Answer: C) Carbon dioxide</b></p>
-            <p class="urdu">درست جواب: کاربن ڈائی آکسائیڈ</p>
-        </details>
-    </div>
+    <p>
+      We believe that education becomes more useful
+      when students understand concepts and learn
+      how to apply them independently.
+    </p>
+  </div>
 </section>
 
 <section class="container" id="contact">
-    <h2 class="title">Contact Us</h2>
-    <div class="content">
-        <p>Have any questions or suggestions? We would love to hear from you.</p>
-        <p class="urdu">کیا آپ کا کوئی سوال یا مشورہ ہے؟ ہمیں ای میل کریں۔</p>
+  <h2 class="section-title">Contact Us</h2>
 
-        <!-- Replace this email with your own Gmail address -->
-        <a class="btn-blue" href="mailto:batoolafia05@gmail.com">
-            ✉ Send Us an Email
-        </a>
+  <div class="article">
+    <p>
+      Have a question, suggestion or correction?
+      We welcome feedback from our readers.
+    </p>
 
-        <p style="margin-top:15px;">
-            Email:batoolafia05@gmail.com
-        </p>
-    </div>
+    <p>
+      Email:
+      <a href="mailto:batoolafia05@gmail.com">
+    batoolafia05@gmail.com
+      </a>
+    </p>
+
+    <p>
+      Please replace the sample email address
+      with your real contact email before publishing.
+    </p>
+  </div>
 </section>
 
 <section class="container" id="privacy">
-    <h2 class="title">Privacy Policy</h2>
-    <div class="content">
-        <p>Study Point respects the privacy of its visitors. We aim to provide a safe and helpful learning experience. We do not intentionally collect sensitive personal information through this website.</p>
-        <p class="urdu">اسٹوڈی پوائنٹ اپنے وزیٹرز کی پرائیویسی کا احترام کرتا ہے اور محفوظ تعلیمی ماحول فراہم کرنے کی کوشش کرتا ہے۔</p>
-        <p>For privacy-related questions, please contact us through our email address.</p>
-    </div>
+  <h2 class="section-title">Privacy Policy</h2>
+
+  <div class="article">
+    <h3>Privacy Policy for Study Point</h3>
+
+    <p>
+      At Study Point, accessible through our website,
+      we respect the privacy of our visitors.
+      This policy explains what information may
+      be collected and how it may be used.
+    </p>
+
+    <h4>Information We Collect</h4>
+    <p>
+      We do not ask visitors to provide personal
+      information just to read our educational content.
+      If visitors contact us by email, we may receive
+      the information they choose to share.
+    </p>
+
+    <h4>Cookies</h4>
+    <p>
+      Our website or third-party services may use
+      cookies and similar technologies to improve
+      website functionality and understand visitor
+      interactions.
+    </p>
+
+    <h4>Google AdSense</h4>
+    <p>
+      If Google AdSense is enabled on this website,
+      Google and its advertising partners may use
+      cookies or similar technologies to serve,
+      measure and personalize advertisements,
+      subject to applicable settings and consent
+      requirements.
+    </p>
+
+    <p>
+      Visitors can learn about Google's advertising
+      practices and available controls through
+      Google's official privacy information.
+    </p>
+
+    <h4>Third-Party Services</h4>
+    <p>
+      Third-party services may have their own
+      privacy policies and practices. We encourage
+      visitors to review those policies when using
+      external services.
+    </p>
+
+    <h4>Children's Privacy</h4>
+    <p>
+      Our educational content is intended for
+      general student audiences. We do not
+      knowingly request sensitive personal
+      information from children.
+    </p>
+
+    <h4>Policy Updates</h4>
+    <p>
+      This Privacy Policy may be updated when
+      our website or its services change.
+      Any updated version will be published
+      on this page.
+    </p>
+
+    <h4>Contact</h4>
+    <p>
+      For privacy questions, contact:
+      batoolafia05@gmail.com
+    </p>
+  </div>
 </section>
 
+</main>
+
 <footer>
-    <p>© 2026 Study Point. All Rights Reserved.</p>
-    <p>Learn Today, Lead Tomorrow!</p>
-    <p>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#notes">Notes</a>
-        <a href="#contact">Contact</a>
-        <a href="#privacy">Privacy Policy</a>
-    </p>
+  <div class="logo">Study <span>Point</span></div>
+
+  <p>Learning Today, Building Tomorrow.</p>
+
+  <p>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#privacy">Privacy Policy</a>
+  </p>
+
+  <p>
+    &copy; <span id="year"></span> Study Point.
+    All rights reserved.
+  </p>
 </footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
 
 </body>
 </html>
+
 
 
